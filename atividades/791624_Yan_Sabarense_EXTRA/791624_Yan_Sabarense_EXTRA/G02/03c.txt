@@ -1,0 +1,21 @@
+public class ConversorBinarioBase {
+
+    public static String dbin2base(int base, String binario) {
+        if (base < 2 || base > 16) {
+            return "Base inválida. A base deve estar entre 2 e 16.";
+        }
+
+        int decimal = Integer.parseInt(binario, 2);
+        String resultado = Integer.toString(decimal, base);
+        
+        return resultado;
+    }
+
+    public static void main(String[] args) {
+        String binario = "1101";
+        int baseDesejada = 8; // Octal
+        String resultado = dbin2base(baseDesejada, binario);
+        System.out.println("Número binário: " + binario);
+        System.out.println("Em base " + baseDesejada + ": " + resultado);
+    }
+}

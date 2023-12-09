@@ -1,0 +1,25 @@
+LXI H, DADO01 ; Carregar DADO01 em H-L pair
+MOV C, L      ; Armazenar L em C
+MOV B, H      ; Armazenar H em B
+MOV A, B      ; Armazenar B em A
+
+RAR           ; Rotação direita através do carry (A = DADO01 / 2)
+RAR           ; A = DADO01 / 4
+
+MOV E, A      ; Armazenar o resultado em E
+
+LXI H, DADO02 ; Carregar DADO02 em H-L pair
+MOV C, L      ; Armazenar L em C
+MOV B, H      ; Armazenar H em B
+MOV A, B      ; Armazenar B em A
+
+RLC           ; Rotação esquerda através do carry (A = DADO02 * 2)
+RLC           ; A = DADO02 * 4
+RLC           ; A = DADO02 * 8
+
+MOV D, A      ; Armazenar o resultado em D
+
+MOV A, E      ; Carregar o valor de DADO01 / 4 em A
+ADD D         ; Adicionar o valor de DADO02 * 8
+MOV DADO03, A ; Armazenar o resultado em DADO03
+HLT           ; Parar a execução

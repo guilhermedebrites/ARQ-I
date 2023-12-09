@@ -1,0 +1,44 @@
+public class AvaliadorBase {
+
+    public static String baseEval(String x, String operador, String y, int base) {
+        if (!isValidNumber(x, base) || !isValidNumber(y, base)) {
+            throw new IllegalArgumentException("Números inválidos na base " + base + ": " + x + " e/ou " + y);
+        }
+
+        int resultadoDecimalX = Integer.parseInt(x, base);
+        int resultadoDecimalY = Integer.parseInt(y, base);
+        int resultadoDecimal;
+
+        switch (operador) {
+            case "+":
+                resultadoDecimal = resultadoDecimalX + resultadoDecimalY;
+                break;
+            case "-":
+                resultadoDecimal = resultadoDecimalX - resultadoDecimalY;
+                break;
+            case "*":
+                resultadoDecimal = resultadoDecimalX * resultadoDecimalY;
+                break;
+            default:
+                throw new IllegalArgumentException("Operador inválido: " + operador);
+        }
+
+        return Integer.toString(resultadoDecimal, base);
+    }
+
+    private static boolean isValidNumber(String numero, int base) {
+        String regex = "[0-" + (base - 1) + "]+";
+        return numero.matches(regex);
+    }
+
+    public static void main(String[] args) {
+        String x = "10";
+        String operador = "-";
+        String y = "5";
+        int base = 10;
+
+        String resultado = baseEval(x, operador, y, base);
+
+        System.out.println("Resultado da operação: " + resultado);
+    }
+}

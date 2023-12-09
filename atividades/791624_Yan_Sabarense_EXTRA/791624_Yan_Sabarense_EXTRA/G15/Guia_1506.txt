@@ -1,0 +1,23 @@
+LXI H, DADO01 ; Carregar DADO01 em H-L pair
+MOV C, L      ; Armazenar L em C
+MOV B, H      ; Armazenar H em B
+MOV A, B      ; Armazenar B em A
+
+ADD A, A      ; Duplicar o valor de DADO01 (A = 2 * DADO01)
+ADD A, A      ; A = 4 * DADO01
+ADD A, B      ; A = 5 * DADO01
+
+MOV E, A      ; Armazenar o resultado em E
+
+LXI H, DADO02 ; Carregar DADO02 em H-L pair
+MOV C, L      ; Armazenar L em C
+MOV B, H      ; Armazenar H em B
+MOV A, B      ; Armazenar B em A
+
+ADD A, A      ; Duplicar o valor de DADO02 (A = 2 * DADO02)
+MOV D, A      ; Armazenar o resultado em D
+
+MOV A, E      ; Carregar o valor de DADO01 * 5 em A
+SUB D         ; Subtrair o valor de DADO02 * 2
+MOV DADO03, A ; Armazenar o resultado em DADO03
+HLT           ; Parar a execução
