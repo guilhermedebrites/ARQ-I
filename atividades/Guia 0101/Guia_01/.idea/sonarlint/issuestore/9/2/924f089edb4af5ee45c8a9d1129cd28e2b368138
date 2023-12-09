@@ -1,30 +1,0 @@
-
-9
-java:S1643Z"Use a StringBuilder instead.(—¼Ö±8¶¨¯·œ1
-9
-java:S1643k"Use a StringBuilder instead.(—¼Ö±8¶¨¯·œ1
-|
-java:S1488"_Immediately return this expression instead of assigning it to the temporary variable "binario".(­ƒ¸ó8ã‡˜·œ1
-7
-java:S1220""Move this file to a named package.8ã‡˜·œ1
-j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯©ë„8ë‡˜·œ1
-j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É×ˆî8ì‡˜·œ1
-a
-java:S1854G"?Remove this useless assignment to local variable "base4Length".(Å¨®Æıÿÿÿÿ8‘‚«·œ1
-Z
-java:S1854V"=Remove this useless assignment to local variable "hexLength".(–«àê8‘‚«·œ1
-\
-java:S1854g"?Remove this useless assignment to local variable "octalLength".(ƒ“º£8‘‚«·œ1
-R
-java:S1481G"0Remove this unused "base4Length" local variable.(Å¨®Æıÿÿÿÿ8’‚«·œ1
-K
-java:S1481V".Remove this unused "hexLength" local variable.(–«àê8’‚«·œ1
-M
-java:S1481g"0Remove this unused "octalLength" local variable.(ƒ“º£8“‚«·œ1
-Z	java:S106{"9Replace this use of System.out or System.err by a logger.(î©–­ÿÿÿÿÿ8ñ‡˜·œ1
-U	java:S106|"9Replace this use of System.out or System.err by a logger.(ïßâÃ8ñ‡˜·œ1
-Z	java:S106}"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ñ‡˜·œ1
-V	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(Œë–ï8ò‡˜·œ1
-U	java:S106‰"9Replace this use of System.out or System.err by a logger.(úå8ó‡˜·œ1
-V	java:S106"9Replace this use of System.out or System.err by a logger.(Şù´‹8ó‡˜·œ1
-V	java:S106•"9Replace this use of System.out or System.err by a logger.(şø¯³8ô‡˜·œ1
