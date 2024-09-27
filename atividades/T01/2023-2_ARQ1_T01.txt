@@ -1,0 +1,109 @@
+808721 - Guilherme Gomes de Brites
+
+1)
+	
+https://docplayer.com.br/3878086-O-cpld-dispositivo-complexo-de-logica-programacao-aplicado-em-
+automacao-industrial-resumo.html
+Acessado em 06/10/2023
+
+https://edisciplinas.usp.br/pluginfile.php/530826/mod_resource/content/1/DISPOSITIVOS LÓGICOS
+PROGRAMÁVEIS_2014.pdf
+Acessado em 06/07/2023
+
+https://www.feg.unesp.br/Home/PaginasPessoais/ProfMarceloWendling/logica-programavel.pdf
+
+Tanto o artigo "Lógica Programável" de Marcelo Wendling quanto o documento "O CPLD: Dispositivo Complexo de Lógica Programação Aplicado em Automação Industrial" compartilham um foco comum na lógica programável, em particular nos dispositivos CPLD. Ambos os materiais abordam a aplicação e o funcionamento desses dispositivos, especialmente em contextos industriais e de automação.
+
+2)
+
+WENDLING, M. Lógica Programável. Disponível em: 
+https://www.feg.unesp.br/Home/PaginasPessoais/ProfMarceloWendling/logica-programavel.pdf. 
+Acesso em: 16/10/2023.
+
+BIBLIOGRAFIA DO ARTIGO:
+
+ALTERA. Disponível em: <http://www.altera.com>. Acesso em: 3 ago. 2011.
+COIMBRA, J. M. Altera CycloneTM II. Disponível em:
+<http://pt.scribd.com/doc/38510204/CycloneII>. Acesso em: 3 ago. 2011
+COSTA, C. Projetando Controladores Digitais com FPGA. São Paulo: Novatec, 2006.
+159 p.
+RANGEL, F. R. Aulas FPGAs. Disponível em:
+<http://www.dee.ufrn.br/~frangel/ensino/20061/ele365/AulaFPGAs.pdf>. Acesso em:
+3 ago. 2011.
+WIKIPEDIA: FPGA. Disponível em: <http://pt.wikipedia.org/wiki/FPGA>. Acesso em: 3
+ago. 2011.
+
+3)
+
+ASIC (Application-Specific Integrated Circuit): Um circuito integrado projetado para uma função específica.
+
+ASSP (Application-Specific Standard Product): Um circuito integrado pré-projetado para uma aplicação específica em um mercado.
+
+SPLD (Simple Programmable Logic Device): Um dispositivo de lógica programável para funções lógicas simples.
+
+CPLD (Complex Programmable Logic Device): Um dispositivo de lógica programável para circuitos digitais complexos com capacidade de reprogramação.
+
+SoC (System on a Chip): Um circuito integrado que incorpora todos os componentes de um sistema eletrônico em um único chip.
+
+FPGA (Field-Programmable Gate Array): Um circuito integrado reprogramável com blocos de lógica programável e interconexões configuráveis.
+
+4)
+______________________________________________________________________________________________________________________________________
+| Termo | Significado                       | Características                                                                        |
+|-------|-----------------------------------|----------------------------------------------------------------------------------------|
+| PROM  | Matriz Programável Somente Leitura| - Usado para armazenar dados que não podem ser alterados após a programação inicial.   |
+|       |  (Programmable Read-Only Memory)  | - Os dados são programados uma vez e não podem ser reescritos.                         |
+|	|				    | - A saída é determinada pela entrada de endereço.                                      |
+|------------------------------------------------------------------------------------------------------------------------------------|
+| PLA   | Matriz de Array Programável       | - Composta por AND array e OR array.                                                   |
+|       |(Programmable Logic Array)         | - Programável para implementar funções lógicas específicas.                            |
+|       |                                   | - Proporciona flexibilidade na implementação de funções lógicas.                       |
+|------------------------------------------------------------------------------------------------------------------------------------|
+| PAL   | Matriz Lógica Programável         | - Composta por uma matriz AND fixa e uma matriz OR programável.                        |
+|       |(Programmable Array Logic)         | - Projetado para implementar funções lógicas combinacionais.                           |
+|____________________________________________________________________________________________________________________________________|
+
+5) 
+__________________________________________________________________________________________________________________________________
+| Termo | Significado                               | Características                                                            |
+|-------|-------------------------------------------|----------------------------------------------------------------------------|
+| CPLD  | Dispositivo de Lógica Programável Complexa| - Utilizado para implementar circuitos digitais complexos.                 |
+|       |    (Complex Programmable Logic Device)    | - Oferece uma ampla gama de blocos de lógica reconfiguráveis e flip-flops. |
+|       |                                           | - Adequado para projetos de lógica de média complexidade.                  |
+|--------------------------------------------------------------------------------------------------------------------------------|
+| FPGA  | Matriz de Portas Programáveis em Campo    | - Composta por blocos lógicos programáveis e interconexões configuráveis.  |
+|       |   (Field-Programmable Gate Array)         | - Pode ser reprogramado após a fabricação.                                 |
+|       |                                           | - Ideal para prototipagem de hardware e projetos de alta complexidade.     |  
+|________________________________________________________________________________________________________________________________|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+String prompt = "Você é um analista financeiro sênior, especializado em proporcionar orientações personalizadas para otimizar a saúde financeira. Suas principais qualidades incluem profundo conhecimento em estratégias de investimento, análise de riscos e soluções financeiras inovadoras.\n\n" +
+            "Preciso de orientações específicas com base em alguns parâmetros financeiros. Minha situação atual envolve" +
+            "- Renda mensal: " + analistaFinanceiro.getRendaMensal() + "\n" + 
+            ", investimentos: " + analistaFinanceiro.getInvestimentos() + "\n" +
+            ", dívidas: " + analistaFinanceiro.getDividas() + "\n" +
+            ", objetivos financeiros: " + analistaFinanceiro.getObjetivoFinanceiro() + "\n" +"\n\n" +
+            "Gostaria de solicitar sua expertise para me orientar sobre os melhores caminhos a seguir. Como posso otimizar meus investimentos? Que estratégias você sugere para alcançar meus objetivos financeiros dados esses parâmetros? Agradeço antecipadamente por suas valiosas sugestões.\n\n" +
+            "Formato da Resposta: JSON\n\n" +
+            "Padrão de Resposta:\n" +
+            "  \"dicas\": {\n" +
+            "    \"investimentos\": \"[insira dicas de investimentos aqui]\",\n" +
+            "    \"gestaoDeDividas\": \"[insira dicas de gestão de dívidas aqui]\",\n" +
+            "    \"planejamentoFinanceiro\": \"[insira dicas de planejamento financeiro aqui]\"\n" +
+            "  }\n" +
+            "}";
+
+
+
+
+
+.prompt("Você é um analista financeiro sênior, especializado em proporcionar orientações personalizadas para otimizar a saúde financeira. Suas principais qualidades incluem profundo conhecimento em estratégias de investimento, análise de riscos e soluções financeiras inovadoras. 
+
+Preciso de orientações específicas com base em alguns parâmetros financeiros. Minha situação atual envolve - Renda mensal: 5000.0, investimentos: 10000.0, dívidas: 2000.0, objetivos financeiros: Poupar para aquisição de uma casa. Gostaria de solicitar sua expertise para me orientar sobre os melhores caminhos a seguir. Como posso otimizar meus investimentos? Que estratégias você sugere para alcançar meus objetivos financeiros dados esses parâmetros? Agradeço antecipadamente por suas valiosas sugestões. Formato da Resposta: JSON. Padrão de Resposta: \"dicas\": {\"investimentos\": \"[insira dicas de investimentos aqui]\", \"gestaoDeDividas\": \"[insira dicas de gestão de dívidas aqui]\", \"planejamentoFinanceiro\": \"[insira dicas de planejamento financeiro aqui]\"}.")
+            
+
+Você é um analista financeiro sênior, especializado em proporcionar orientações personalizadas para otimizar a saúde financeira. Suas principais qualidades incluem profundo conhecimento em estratégias de investimento, análise de riscos e soluções financeiras inovadoras. Preciso de orientações específicas com base em alguns parâmetros financeiros. Minha situação atual envolve - Renda mensal: 5000.0, investimentos: 10000.0, dívidas: 2000.0, objetivos financeiros: Poupar para aquisição de uma casa. Gostaria de solicitar sua expertise para me orientar sobre os melhores caminhos a seguir. Como posso otimizar meus investimentos? Que estratégias você sugere para alcançar meus objetivos financeiros dados esses parâmetros? Agradeço antecipadamente por suas valiosas sugestões. Formato da Resposta: JSON. Padrão de Resposta: \"dicas\": {\"investimentos\": \"[insira dicas de investimentos aqui]\", \"gestaoDeDividas\": \"[insira dicas de gestão de dívidas aqui]\", \"planejamentoFinanceiro\": \"[insira dicas de planejamento financeiro aqui]\"}.
+
+
+
+
+
+{
+   "dicas":{
+      "investimentos":[
+         "Insira posições seguras com base no que tem acesso. Ao investir, é importante diversificar e manter investimentos provendo segurança financeira e potencial para crescer.",
+         "Seja proativo e se certifique de monitorar regularmente seus investimentos, pois as mudanças ocorrem frequentemente.",
+         "Evite investimentos de alto risco, que podem gerar recompensas maiores, mas também maior risco de perda."
+      ],
+      "gestaoDeDividas":[
+         "Comece por avaliar suas finanças e estabeleça prioridades. Desenvolva um plano financeiro e identifique quais dívidas precisam ser pagas em primeiro plano.",
+         "Negocie com credores para obter taxas mais baixas e veja se é possível refinanciar.",
+         "Ao refinanciar, verifique se não haverá tarifas adicionais e certifique-se de que a taxa de juros seja melhor do que um empréstimo novo."
+      ],
+      "planejamentoFinanceiro":[
+         "Comece planejando seus objetivos financeiros de longo prazo. Estabeleça uma reserva de emergência funda, para garantir que você estará preparado em caso de emergência.",
+         "Crie metas específicas para a economia de dinheiro, como limitar o custo geral do orçamento mensal.",
+         "Defina limites para seus impulsos mais caros e crie estratégias de economia de dinheiro para atingir seus objetivos."
+      ]
+   }
+}
+
+
+"Você é um analista financeiro sênior, especializado em proporcionar orientações personalizadas para otimizar a saúde financeira." + 
+                        "Suas principais qualidades incluem profundo conhecimento em estratégias de investimento, análise de riscos e soluções financeiras inovadoras." + 
+                        "Preciso de orientações específicas com base em alguns parâmetros financeiros. Minha situação atual envolve:" +
+                        " Renda mensal: " + analista.getRendaMensal() +
+                        ", Investimentos: " + analista.getInvestimentos() +
+                        ", Dívidas: " + analista.getDividas() +
+                        ", Objetivo financeiro: " + analista.getObjetivoFinanceiro() +
+                        ".Gostaria de solicitar sua expertise para me orientar sobre os melhores caminhos a seguir com base nesses parâmentros." +
+                        "Cada resposta deve conter no máximo 200 caracteres e estar estruturada no formato JSON" +
+			Padrão de Resposta: {\"dicas\":{\"investimentos\":\"[insira orientações levando em conta meus parâmetros, para investimentos]\",\"gestaoDeDividas\":\"[insira orientações levando em conta meus parâmetros, para dívidas]\",\"planejamentoFinanceiro\":\"[insira orientações levando em conta meus parâmetros, para planejamento financeiro]\"}}";
+
+
+
+
+                        "Formato da Resposta: JSON. Padrão de Resposta: {\"dicas\":{\"investimentos\":\"[insira um texto de dicas de investimentos aqui]\",\"gestaoDeDividas\":\"[insira um texto de dicas de gestão de dívidas aqui]\",\"planejamentoFinanceiro\":\"[insira um texto contendo dicas de planejamento financeiro aqui]\"}}";
+
+
+
+"Como posso otimizar meus investimentos? Que estratégias você sugere para alcançar meus objetivos financeiros dados esses parâmetros?" +
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

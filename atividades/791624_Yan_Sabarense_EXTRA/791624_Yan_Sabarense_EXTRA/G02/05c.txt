@@ -1,0 +1,48 @@
+public class AvaliadorExpressaoBinaria {
+
+    public static String dbinEval(String bin1, String operador, String bin2) {
+        if (!isBinary(bin1) || !isBinary(bin2)) {
+            return "Os números fornecidos não são binários válidos.";
+        }
+
+        switch (operador) {
+            case "+":
+                return addBinary(bin1, bin2);
+            case "-":
+                return subtractBinary(bin1, bin2);
+            case "*":
+                return multiplyBinary(bin1, bin2);
+            default:
+                return "Operador inválido. Os operadores suportados são '+', '-', '*'.";
+        }
+    }
+
+    private static boolean isBinary(String binario) {
+        return binario.matches("[01]+");
+    }
+
+    private static String addBinary(String bin1, String bin2) {
+        int resultado = Integer.parseInt(bin1, 2) + Integer.parseInt(bin2, 2);
+        return Integer.toBinaryString(resultado);
+    }
+
+    private static String subtractBinary(String bin1, String bin2) {
+        int resultado = Integer.parseInt(bin1, 2) - Integer.parseInt(bin2, 2);
+        return Integer.toBinaryString(resultado);
+    }
+
+    private static String multiplyBinary(String bin1, String bin2) {
+        int resultado = Integer.parseInt(bin1, 2) * Integer.parseInt(bin2, 2);
+        return Integer.toBinaryString(resultado);
+    }
+
+    public static void main(String[] args) {
+        String bin1 = "101";
+        String operador = "*";
+        String bin2 = "11";
+
+        String resultado = dbinEval(bin1, operador, bin2);
+
+        System.out.println("Resultado da expressão binária: " + resultado);
+    }
+}

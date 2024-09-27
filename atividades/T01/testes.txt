@@ -1,0 +1,80 @@
+"""Você é um elaborador de avaliaçoes para o [PERIODO] em [AREA_DO_CONHECIMENTO]. Elabore uma questao [DIFICULDADE] para uma prova de [COMPONENTE_CURRICULAR] com o tema [TEMA] abordando o tópico [TOPICO] e o subtopico [SUBTOPICO], com ênfase em "[HABILIDADE]". As questões devem seguir o padrão de [TIPO_QUESTAO]; Certifique-se de que cada pergunta seja formulada com um enunciado que descreva uma situação-problema e inclua um comando para a resposta. Isso garantirá que todas as questões estejam estruturadas de maneira consistente, proporcionando uma melhor compreensão e resposta por parte dos envolvidos.; Todas as questões devem ser acompanhadas por referência bibliográfica; Todas as questões devem ser acompanhadas pela justificativa da resposta correta. Retorne um JSON com a questão elaborada, no seguinte formato: {"Enunciado": "texto da questão", "Escolhas": [escolhas], "Justificativa": "Justificativa", "Referencia": "Referência bibliográfica", "Area": "Área da questão", "Dificuldade": "Fácil | Médio | Difícil"}. As escolhas será um array de objetos e deverá vir de acordo com o número de alternativas [NUMERO_DE_ALTERNATIVAS] e em ordem alfabética, respeitando o padrão: { "Letra": "letra", "Texto": "Texto da opção.", "Correta": "True | False"}; O JSON deverá retornar o campo "Escolhas" somente se o tipo_questao for Multipla escolha."""
+
+
+
+"Você é um analista financeiro sênior, especializado em proporcionar orientações personalizadas para otimizar a saúde financeira." + 
+            "Suas principais qualidades incluem profundo conhecimento em estratégias de investimento, análise de riscos e soluções financeiras inovadoras." + 
+            "Preciso de orientações específicas com base em alguns parâmetros financeiros. Minha situação atual envolve:" +
+            " Renda mensal: " + analista.getRendaMensal() +
+            ", Investimentos: " + analista.getInvestimentos() +
+            ", Dívidas: " + analista.getDividas() +
+            ", Objetivo financeiro: " + analista.getObjetivoFinanceiro() +
+            ", Idade: " + analista.getIdade() + " anos." +
+            "Gostaria de solicitar sua expertise para me orientar sobre os melhores caminhos a seguir com base nesses parâmentros." +
+	    "Retorne um JSON com os planos de ação, no seguinte formato:" +
+	    "{"Investimento": "melhor estratégia para o caso", "gestaoDeDividas": [estratégia para fugir das dividas], "planejamentoFinanceiro": "planejamento". O planejamento será um array de objetos e deverá vir em ordem alfabética, respeitando o padrão: {"Planejamento": "texto", "posição": "numeração ordenada"};"
+
+
+"
+
+{"Investimento": "Considerando o baixo investimento inicial, recomendo que começe com investimentos de baixo risco como Fundos Mútuos e CDB Referenciados, para garantir que seu capital cresça de forma segura.",
+"gestaoDeDividas": ["Uma das principais estratégias para sair das dividas é se focar e não começar novos projetos. Portanto, recomendo que comece a poupar o valor dessas dívidas em uma conta segura ou investing, enquanto se compromete a não usar esses recursos para novos projetos, até que sua dívida seja liquidada. ",
+"planejamentoFinanceiro": [{"Planejamento": "Atualmente, com a renda que você possui, recomendo que use 30% para manter suas despesas básicas, 20% para poupar e 50% para que possa começar a investir e conseguir investir em seu objetivo de liberdade financeira. Além disso, procure aproveitar as taxas de juros bancárias, a fim de buscar descontos ao pagamento de suas dívidas.", "posição":"1"}, {"Planejamento": "Você também pode usar ferramentas de finanças para monitorar seus gastos e obter maior controle financeiro, além de procurar por formas simplificadas de poupar o dinheiro."}]}"
+
+
+
+{
+  "Investimento": "Investir em ações e outros ativos de baixo risco, de modo a aumentar gradualmente seu patrimônio.",
+  "gestaoDeDividas": [
+    "Avalie os custos reais das dívidas, pague-as com a maior prioridade possível e pague o saldo total de seus cartões de crédito, priorizando aqueles com os juros mais altos."
+  ],
+  "planejamentoFinanceiro": [
+    {
+      "Planejamento": "Criar uma reserva de emergência equivalente a três meses de despesas.",
+      "posição": "1"
+    },
+    {
+      "Planejamento": "Estabeleça metas financeiras a curto, médio e longo prazo, refletindo seus objetivos pessoais.",
+      "posição": "2"
+    },
+    {
+      "Planejamento": "Investir parte das economias ao longo do tempo para garantir que sua renda próxima a aposentadoria seja suficiente.",
+      "posição": "3"
+    },
+    {
+      "Planejamento": "Começar a economizar para comprar seu apartamento agora, com um plano de economia passo a passo e objetivos baseados em metas de curto, médio e longo prazo.",
+      "posição": "4"
+    }
+  ]
+}
+
+
+", seguido das estratégias relevantes para seu objetivo.
+Investimento: Dadas suas condições financeiras, a melhor maneira de investir é iniciar em produtos de baixo risco, como títulos do Tesouro, fundos mútuos e/ou certificados de depósito bancário, como recomendado pela sua idade.Gestão de Dívidas: Deve-se reduzir as dívidas rapidamente e limitar as despesas discricionárias àquilo que se pode pagar. Além disso, existem vários tipos de empréstimos consolidados disponíveis (dependendo da quantidade de dívidas) que podem reunir todas as dívidas em um único pagamento, o que reduzirá os juros a pagar e simplificará grandemente sua vida financeira.Planejamento Financeiro:1. Planejamento de orçamento – O objetivo será a eliminação das dívidas. Os gastos discricionários devem ser reduzidos ao máximo, ao mesmo tempo em que se cria uma reserva de emergência para sua estabilidade financeira.2. Remodelagem dos investimentos – Os investimentos devem ser realizados em produtos de baixo risco, como os mencionados anteriormente. Aos poucos, pode-se adicionar produtos de maior risco, dependendo da sua capacidade de arriscar.3. Planejamento de metas a longo prazo – Estabeleça metas financeiras que sejam possíveis de serem atingidas e inicie o acúmulo de patrimônio.4. Revisão dos planos e metas – Esteja sempre revisando e aprimorando seus planos ao longo do tempo e priorize sua segurança financeira."
+
+
+":
+
+{
+    "Investimento": "Investir os 500.0 ao longo do ano em títulos do tesouro direto conservadores, pois o retorno tende a ser mais estável e seguro do que outros investimentos. É importante destacar que os valores devem demorar para sofrerem mudanças significativas, e não há garantia de rentabilidade.",
+    "gestaoDeDividas": "É importante ter foco, disciplina e estratégia para cumprir com às dívidas. Recomendo utilizar uma planilha para consolidar todos as dividas existentes incluindo o saldo a pagar, o valor da fatura e a data em que deverá ser paga. É importante começar pelas dívidas de juros mais altos. Assim terá maior eficiência no pagamento.", 
+    "planejamentoFinanceiro": [
+        {"Planejamento": "Deve-se criar um planejamento financeiro, para investir os recursos acumulados e conseguir alcançar oobjetivo desejado. Os melhores primeiros passos são: criar um fundo de emergencia para possíveis eventos imprevistos, pagar as dividas existentes e começar a contribuir para a previdência privada.", "posição": 1},
+        {"Planejamento": "O próximo passo deve ser investir em ativos de maior Liquidez, que são transacionados de forma mais rápida e segura, exemplo: CDB, renda fixa, fondos imobiliarios.  ", "posição": 2}, 
+        {"Planejamento": " Por ultimo, a partir de 1 anos utilize os melhoramentos no fluxo de caixa para executar operações de mais alto risco, mas com maior potencial de valorização e retorno em mercados acionários. É importante diversificar seus investimentos e  se informar. ", "posição": 3}
+    ]
+};"
+
+
+
+
+"Você é um analista financeiro sênior, especializado em proporcionar orientações personalizadas para otimizar a saúde financeira." +
+                "Suas principais qualidades incluem profundo conhecimento em estratégias de investimento, análise de riscos e soluções financeiras inovadoras." +
+                "Preciso de orientações específicas com base em alguns parâmetros financeiros. Minha situação atual envolve:" +
+                " Renda mensal: 1200", Investimentos: 500", Dívidas: " 6000
+                ", Objetivo financeiro: " Me livrar das dividas e conseguir uma liberdade financeira, comprar meu apartamento e viver bem.", Idade: " + analista.getIdade() + " anos." +
+                "Retorne apenas um JSON com os planos de ação no seguinte formato: {\"Investimento\": \"melhor estratégia para o caso\"," +
+                "\"gestaoDeDividas\": [\"estratégia para fugir das dívidas\"], \"planejamentoFinanceiro\": [{\"Planejamento\": \"texto\"}]}. O planejamento será um array de objetos e deverá vir de acordo com o número de planejamentos [4]";
+
+
+

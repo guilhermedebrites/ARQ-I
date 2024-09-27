@@ -1,0 +1,36 @@
+public class ConversorASCIIHex {
+
+    public static String ASCII2hex(String texto) {
+        StringBuilder hexString = new StringBuilder();
+
+        for (int i = 0; i < texto.length(); i++) {
+            char ch = texto.charAt(i);
+            hexString.append(Integer.toHexString((int) ch));
+        }
+
+        return hexString.toString();
+    }
+
+    public static String hex2ASCII(String hex) {
+        StringBuilder asciiString = new StringBuilder();
+
+        for (int i = 0; i < hex.length(); i += 2) {
+            String str = hex.substring(i, i + 2);
+            asciiString.append((char) Integer.parseInt(str, 16));
+        }
+
+        return asciiString.toString();
+    }
+
+    public static void main(String[] args) {
+        String textoOriginal = "Hello, World!";
+        
+       
+        String hexString = ASCII2hex(textoOriginal);
+        System.out.println("Texto original: " + textoOriginal);
+        System.out.println("Em hexadecimal: " + hexString);
+
+        String asciiString = hex2ASCII(hexString);
+        System.out.println("De volta para ASCII: " + asciiString);
+    }
+}

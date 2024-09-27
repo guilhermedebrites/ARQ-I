@@ -1,0 +1,22 @@
+Bom, começando pela implementação do MD5 para maior segurança do nosso sistema
+
+Voces podem ver a esquerda, nosso metodo da Classe Usuario para Criptografar as senhas,
+com isso, na hora do cadastro nos utilizamos esse metodo antes de inserir no banco de dados,
+como voces podem ver a direita no nosso Service.
+
+
+Com isso, na hora de efetuar o login, temos o nosso metodo de autenticação, que ciptografa a senha inserida pelo usuario e compara com a que consta no banco, caso bata ele autoriza o login
+
+
+
+
+-------------------------
+
+Passando para parte de implementação do sistema inteligente, como voces podem ver
+nos solicitamos ao usuario que preencha sua renda mensal, capital investido, valor em dividas e seu objetivo financeiro, com isso enviamos um prompt com essas informações para api da openai, que nos retorna trazendo dicas de investimento, como gerir melhor nossas dividas e por fim
+4 passos para voce planejar melhor sua vida financeira.
+
+Passando para o codigo, voces podem ver nossa model que recebe esses campos e no Service,
+temos a conexao de fato com a API e o prompt que enviamos para ela.
+
+Esse foi o nosso trabalho, Muito obrigado!

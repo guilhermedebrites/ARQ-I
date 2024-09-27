@@ -1,0 +1,23 @@
+public class ConversorBaseBase {
+
+    public static String dbase2base(int base1, int base2, String numero) {
+        if (base1 < 2 || base1 > 16 || base2 < 2 || base2 > 16){
+            return "Bases inválidas. As bases devem estar entre 2 e 16.";
+        }
+    
+        int decimal = Integer.parseInt(numero, base1);
+        
+        String resultado = Integer.toString(decimal, base2);
+
+        return resultado;
+    }
+
+    public static void main(String[] args) {
+        String numero = "1101";
+        int baseOriginal = 2; // Binário
+        int baseDesejada = 8; // Octal
+        String resultado = dbase2base(baseOriginal, baseDesejada, numero);
+        System.out.println("Número na base " + baseOriginal + ": " + numero);
+        System.out.println("Em base " + baseDesejada + ": " + resultado);
+    }
+}

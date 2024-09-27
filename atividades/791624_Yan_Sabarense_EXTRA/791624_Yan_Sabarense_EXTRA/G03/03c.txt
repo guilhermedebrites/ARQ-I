@@ -1,0 +1,23 @@
+public class BinarioParaDecimal {
+
+    public static int sbin2dec(String binario) {
+        if (!isBinary(binario)) {
+            throw new IllegalArgumentException("Número binário inválido: " + binario);
+        }
+
+        return Integer.parseInt(binario, 2);
+    }
+
+    private static boolean isBinary(String binario) {
+        return binario.matches("[01]+");
+    }
+
+    public static void main(String[] args) {
+        String numeroBinario = "1101";
+
+        int resultadoDecimal = sbin2dec(numeroBinario);
+
+        System.out.println("Número binário: " + numeroBinario);
+        System.out.println("Em decimal: " + resultadoDecimal);
+    }
+}

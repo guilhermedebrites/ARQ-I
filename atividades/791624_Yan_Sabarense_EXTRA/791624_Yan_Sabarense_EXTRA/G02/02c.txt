@@ -1,0 +1,23 @@
+public class ConversorDoubleBinario {
+
+    public static String double2bin(double numero) {
+        if (Double.isInfinite(numero) || Double.isNaN(numero)) {
+            return "NaN";
+        }
+        
+        long bits = Double.doubleToLongBits(numero);
+        StringBuilder binaryString = new StringBuilder(Long.toBinaryString(bits));
+
+        while (binaryString.length() < 64) {
+            binaryString.insert(0, "0");
+        }
+        return binaryString.toString();
+    }
+
+    public static void main(String[] args) {
+        double numeroDecimal = 3.14;
+        String binarioString = double2bin(numeroDecimal);
+        System.out.println("Número decimal: " + numeroDecimal);
+        System.out.println("Em binário: " + binarioString);
+    }
+}

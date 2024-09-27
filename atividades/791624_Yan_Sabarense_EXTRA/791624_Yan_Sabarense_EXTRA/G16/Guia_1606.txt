@@ -1,0 +1,19 @@
+LXI H, DADO01 ; Carregar DADO01 em H-L pair
+MOV C, L      ; Armazenar L em C
+MOV B, H      ; Armazenar H em B
+MOV A, B      ; Armazenar B em A
+
+MVI D, 01H    ; Inicializar o registrador de resultado com 1 (1!)
+
+LOOP:
+MUL D         ; Multiplicar o resultado atual (em A) pelo valor de D
+MOV A, L      ; Armazenar o resultado em A (ignorando o carry)
+INX D        ; Incrementar o registrador auxiliar (índice do loop)
+CMP B         ; Comparar com DADO01
+JZ END_LOOP   ; Se for igual, encerrar o loop
+
+JMP LOOP      ; Saltar de volta para o início do loop
+
+END_LOOP:
+MOV DADO02, A ; Armazenar o resultado em DADO02
+HLT           ; Parar a execução

@@ -1,0 +1,35 @@
+public class FuncoesBitsComBase {
+
+    public static int C1(int nbits, String x, int basex) {
+        int contador = 0;
+        int numeroDecimal = Integer.parseInt(x, basex);
+
+        for (int i = 0; i < nbits; i++) {
+            if ((numeroDecimal & (1 << i)) != 0) {
+                contador++;
+            }
+        }
+
+        return contador;
+    }
+
+    public static String C2(int nbits, String x, int basex) {
+        int numeroDecimal = Integer.parseInt(x, basex);
+        int resultadoDecimal = ~numeroDecimal & ((1 << nbits) - 1);
+        String resultadoBaseX = Integer.toString(resultadoDecimal, basex);
+
+        return resultadoBaseX;
+    }
+
+    public static void main(String[] args) {
+        int nbits = 8;
+        String numero = "25";
+        int basex = 10;
+
+        int resultadoC1 = C1(nbits, numero, basex);
+        System.out.println("C1(" + numero + ") = " + resultadoC1);
+
+        String resultadoC2 = C2(nbits, numero, basex);
+        System.out.println("C2(" + numero + ") = " + resultadoC2);
+    }
+}

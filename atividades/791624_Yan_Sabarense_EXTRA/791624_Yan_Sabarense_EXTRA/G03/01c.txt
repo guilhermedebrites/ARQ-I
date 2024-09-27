@@ -1,0 +1,34 @@
+public class FuncoesBits {
+    public static int C1(int nbits, int x) {
+        int contador = 0;
+
+        for (int i = 0; i < nbits; i++) {
+            if ((x & (1 << i)) != 0) {
+                contador++;
+            }
+        }
+
+        return contador;
+    }
+
+    public static int C2(int nbits, int x) {
+        int resultado = 0;
+
+        for (int i = 0; i < nbits; i++) {
+            resultado |= ((x & (1 << i)) == 0 ? 1 : 0) << i;
+        }
+
+        return resultado;
+    }
+
+    public static void main(String[] args) {
+        int nbits = 8; // Número de bits
+        int numero = 25; // Número para teste
+
+        int resultadoC1 = C1(nbits, numero);
+        System.out.println("C1(" + numero + ") = " + resultadoC1);
+
+        int resultadoC2 = C2(nbits, numero);
+        System.out.println("C2(" + numero + ") = " + resultadoC2);
+    }
+}
